@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,7 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# React_OnChange
+onChange in React keeps form inputs in sync with component state, enabling real-time updates and controlled components. It allows for validation, formatting, and predictable one-way data flow, making the UI more reliable and manageable.
+>>>>>>> cbd2504c6d5f6d6cc2721ef08ae1abdf0ecce55a
