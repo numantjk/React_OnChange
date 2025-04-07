@@ -7,6 +7,7 @@ function App() {
     const [quantity,setQuantity] = useState('')
     const [comment,setComment] = useState('')
     const[shipping,setShipping] = useState('')
+    const [color,setColor] = useState('')
 
 
 
@@ -26,6 +27,11 @@ function App() {
     const handleShipping=(e)=>{
         setShipping(e.target.value)
     }
+
+    const handleColor=(e)=>{
+        setColor(e.target.value)
+    }
+
 
   return (
     <>
@@ -67,6 +73,23 @@ function App() {
                      checked={shipping==='Delivery'}
                      onChange={handleShipping}/>
               Pich up</label><br/>
+
+            <h1>Color Picker</h1>
+          <div style={{backgroundColor:color,
+                        color:"teal",
+                        borderStyle:'solid',
+                        borderRadius:'20px'}}>
+              <p>Select Color: {color}</p>
+          </div>
+              <div className='card'>
+              <label>Select a  Color</label>
+              <input style={{backgroundColor:color,
+                             borderRadius:'20px',
+                             color:"teal",
+                             borderStyle:'solid',}} type="color" value={color} onChange={handleColor}/>
+          </div>
+          <p>Select Color: {color}</p>
+
 
       </div>
 
